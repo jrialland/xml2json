@@ -1,0 +1,21 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	<servlet revision="14">
+		<servlet-name>comingsoon</servlet-name>
+		<servlet-class>mysite.server.ComingSoonServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>comingsoon2</servlet-name>
+		<servlet-class>mysite.server.OtherServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping foo="bar">
+		<servlet-name>comingsoon</servlet-name>
+		<url-pattern bar="baz"><![CDATA[/*]]></url-pattern>
+	</servlet-mapping>
+	
+	
+	<test id="23"><sampleTag>Hello</sampleTag></test>
+	<test id="42"><sampleTag><![CDATA[This is a Cdata\n test]]></sampleTag></test>
+	<test id="18"></test>
+</web-app>
